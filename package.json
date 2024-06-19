@@ -44,5 +44,12 @@
   },
   "engines": {
     "node": ">=18.0"
+  },
+  "packageManager": "pnpm@9.2.0+sha256.94fab213df221c55b6956b14a2264c21c6203cca9f0b3b95ff2fe9b84b120390",
+  "pnpm": {
+    "patchedDependencies": {
+      "@docusaurus/plugin-content-docs@3.4.0": "patches/@docusaurus__plugin-content-docs@3.4.0.patch",
+      "@docusaurus/utils@3.4.0": "patches/@docusaurus__utils@3.4.0.patch"
+    }
   }
 }
