@@ -1,0 +1,46 @@
+# FantaisiePhone
+
+すべての操作をメニューからできるようにするプラグイン  
+軽量化と、使いやすさのために自作
+
+```yaml title="custom/custom_gui.yml"
+meta:
+  title: "GUIのタイトル"
+  size: 6
+
+arrangement:
+  - id: 9
+    end_id: 17
+    title: ""
+    lore: []
+    item: "BLACK_STAINED_GLASS_PANE"
+    custom_model_data: 0
+    player_cmd: []
+    server_cmd: []
+  - id: 20
+    title: "<!italic><green>プロフィール</green></!italic>"
+    lore:
+      - "<!italic><gray>自分の情報・統計を表示する</gray></!italic>"
+      - ""
+      - "<!italic><yellow>クリックして表示！</yellow></!italic>"
+    item: "PLAYER_HEAD"
+    texture: "%player%"
+    custom_model_data: 0
+    player_cmd:
+      - "say player"
+    server_cmd: []
+```
+
+| Configuration Key                | Description                                                                                                      |
+| -------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
+| meta.title                       | チェストメニューの名前、MiniMessage のフォーマットが適応されます。                                               |
+| meta.size                        | チェストメニューのサイズ、1 ~ 6 までが指定可能です。                                                             |
+| arrangement.[].id                | アイテムを配置するスロット、番号については[こちら](https://wiki.vg/Inventory)を参照                              |
+| arrangement.[].end_id            | この値を指定すればそこまで同じアイテムを配置。例）id に 9、end_id に 17 を指定したら 9 から 17 までガラスを配置  |
+| arrangement.[].title             | アイテムのタイトル。MiniMessage のフォーマットが適応されます。                                                   |
+| arrangement.[].lore[]            | アイテムの説明、list 型のため複数行かけます。MiniMessage のフォーマットが適応されます。                          |
+| arrangement.[].item              | 配置するアイテム、ID は[こちら](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html)を参照         |
+| arrangement.[].texture           | アイテムが`PLAYER_HEAD`又は革防具の場合は取得される、頭の場合はテクスチャのURL（又は%player%）、革装備は HEX コードを使用する。 |
+| arrangement.[].custom_model_data | アイテムの見た目を設定するもの、詳細は[こちら](/docs/miscellaneous/custom_model_data)を参照                             |
+| arrangement.[].player_cmd        | プレイヤー側で実行、OP を持っている判定になるため注意                                                            |
+| arrangement.[].server_cmd        | サーバー側で実行するコマンド、サーバーで実行するためプレイヤーは取得不可能                                       |
