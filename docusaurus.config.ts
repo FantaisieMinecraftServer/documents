@@ -28,6 +28,7 @@ const config: Config = {
         theme: {
           customCss: './src/css/custom.css',
         },
+        blog: false
       } satisfies Preset.Options,
     ],
   ],
@@ -43,7 +44,7 @@ const config: Config = {
           label: 'ドキュメント',
         },
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/tensyo-minecraft-server',
           label: 'GitHub',
           position: 'right',
         },
