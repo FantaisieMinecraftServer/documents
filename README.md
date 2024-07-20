@@ -1,41 +1,51 @@
-# Website
+# <div align="center">Fantaisie Documents</div>
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+このリポジトリは、サーバーに関する内部情報等を運営用にまとめたドキュメントです。<br>
+このリポジトリのコンテンツは [docs.tensyoserver.net](https://docs.tensyoserver.net/) に公開され、閲覧することができます。<br>
+このドキュメントは運営用に作成しているため、質問・意見等は受け付けていません。
 
-### Installation
+## 使用方法
 
-```
-$ yarn
-```
+開発用にローカルマシンでドキュメントを実行する方法
 
-### Local Development
+### 前提条件
 
-```
-$ yarn start
-```
+- [node](https://nodejs.org)
+- [pnpm](https://pnpm.io/installation)
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+### 開発方法
 
-### Build
+1. このドキュメントをクローンする、もし要素を追加したい場合はフォークしたリポジトリをクローンしよう！
 
-```
-$ yarn build
-```
-
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
-
-### Deployment
-
-Using SSH:
-
-```
-$ USE_SSH=true yarn deploy
+```bash
+$ git clone https://github.com/FantaisieMinecraftServer/document
 ```
 
-Not using SSH:
+2. 必要な依存関係をすべてインストール
 
-```
-$ GIT_USER=<Your GitHub username> yarn deploy
+```bash
+$ pnpm install
 ```
 
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+3. 開発用サーバーを起動
+
+```bash
+$ pnpm run start
+```
+
+これで開発用のサーバーが起動して開発ができるようになります。
+
+### ビルド
+
+```bash
+$ pnpm run build
+```
+
+このコマンドは、`build` ディレクトリに本番環境用のデプロイメントをビルドします。
+これらのファイルはディレクトリに構築されます。
+
+## ライセンス
+
+このドキュメント (`/docs` フォルダ内の `.md` ファイル等) は [CC-BY-SA-4.0](LICENSE-docs)
+
+ドキュメントを作成しているツールは[Docusaurus](https://github.com/facebook/docusaurus)を使用しています。
