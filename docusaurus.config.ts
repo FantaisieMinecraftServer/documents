@@ -23,7 +23,7 @@ const config: Config = {
         docs: {
           sidebarPath: './sidebars.ts',
           editUrl:
-            'https://github.com/tensyo-minecraft-server/document/tree/main/',
+            'https://github.com/FantaisieMinecraftServer/document/tree/main/',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -35,7 +35,7 @@ const config: Config = {
 
   themeConfig: {
     navbar: {
-      title: 'Fantaisie Server',
+      title: 'fantaisie network',
       items: [
         {
           type: 'docSidebar',
@@ -44,7 +44,7 @@ const config: Config = {
           label: 'ドキュメント',
         },
         {
-          href: 'https://github.com/tensyo-minecraft-server',
+          href: 'https://github.com/FantaisieMinecraftServer',
           label: 'GitHub',
           position: 'right',
         },
@@ -52,7 +52,7 @@ const config: Config = {
     },
     footer: {
       style: 'dark',
-      copyright: `Copyright © ${new Date().getFullYear()} Fantaisie Project. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Fantaisie Project.`,
     },
     prism: {
       theme: prismThemes.github,
