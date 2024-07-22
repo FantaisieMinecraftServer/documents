@@ -33,7 +33,7 @@ export default function Home(): JSX.Element {
   const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
-      title={`${siteConfig.title} へようこそ！`}
+      title={`${siteConfig.title} - 新しい世界・人生を作るMinecraft Server`}
       description="サーバーの情報等をまとめたドキュメントになります。"
     >
       <HomepageHeader />
