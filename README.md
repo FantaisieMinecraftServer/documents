@@ -18,7 +18,7 @@
 1. このドキュメントをクローンする、もし要素を追加したい場合はフォークしたリポジトリをクローンしよう！
 
 ```bash
-$ git clone https://github.com/FantaisieMinecraftServer/document
+$ git clone https://github.com/FantaisieMinecraftServer/documents
 ```
 
 2. 必要な依存関係をすべてインストール
